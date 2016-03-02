@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "OCOJ-Swift.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    return YES;
+    
+    Solution *solution = [[Solution alloc] init];
+    NSInteger integer = 99;
+    [solution addDigits:integer];
+    
+    return NO;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
